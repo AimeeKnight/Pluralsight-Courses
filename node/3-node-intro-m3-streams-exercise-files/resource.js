@@ -6,6 +6,7 @@ var EventEmitter = require('events').EventEmitter;
 function Resource (m) {
     
     var maxEvents = m;    
+    // pattern B: inherit from event emitter class
     var self = this;
     
     process.nextTick(function() {
