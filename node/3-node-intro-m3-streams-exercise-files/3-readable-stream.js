@@ -1,5 +1,6 @@
 var request = require('request');
 
+// request() returns a stream with html data
 var s = request('http://www.pluralsight.com/');
 
 // ----- Piping -----
