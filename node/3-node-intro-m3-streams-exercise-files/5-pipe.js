@@ -3,6 +3,7 @@ var request = require('request');
 // Version 1:  Pipe HTML to standard out
 var s = request('http://www.pluralsight.com/');
 
+// instead of listening for events on the readable stream, pipe to the process.stout writable stream
 s.pipe(process.stdout);
 
 // Version 2:  Chain request and pipe together
